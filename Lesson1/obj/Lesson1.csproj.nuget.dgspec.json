@@ -1,31 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DEADPOOL\\source\\repos\\Lesson1\\Lesson1.csproj": {}
+    "C:\\Nordic\\Екатерина-fork\\Lesson1\\Lesson1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DEADPOOL\\source\\repos\\Lesson1\\Lesson1.csproj": {
+    "C:\\Nordic\\Екатерина-fork\\Lesson1\\Lesson1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DEADPOOL\\source\\repos\\Lesson1\\Lesson1.csproj",
+        "projectUniqueName": "C:\\Nordic\\Екатерина-fork\\Lesson1\\Lesson1.csproj",
         "projectName": "Lesson1",
-        "projectPath": "C:\\Users\\DEADPOOL\\source\\repos\\Lesson1\\Lesson1.csproj",
-        "packagesPath": "C:\\Users\\DEADPOOL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DEADPOOL\\source\\repos\\Lesson1\\obj\\",
+        "projectPath": "C:\\Nordic\\Екатерина-fork\\Lesson1\\Lesson1.csproj",
+        "packagesPath": "C:\\Users\\sbannikov\\.nuget\\packages\\",
+        "outputPath": "C:\\Nordic\\Екатерина-fork\\Lesson1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DEADPOOL\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\sbannikov\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
