@@ -13,7 +13,7 @@ namespace Lesson1
 
             // Из строки в целое число
             bool correct = int.TryParse(size, out int Size); 
-            if (!correct) //к чему тут знак "!"?
+            if (!correct) //к чему тут знак "!"? -- [sb] это логическое отрицание. в переводе на русский "если НЕ корректно...."
             {
                 Console.WriteLine("Нам нужно число, а не: " + size);
                 //Конец программы if
@@ -29,13 +29,17 @@ namespace Lesson1
             //Буквы у клеток
             Console.Write($"   ");
             char i = 'A';
-            for (int k = 0; i < Size; k++)
+            for (int k = 0; k < Size; k++) // [sb] тут в цикле было условие i < Size, и цикл никогда не выполнялся, так как 
+                // i было присвоено значение 'A' что в целочисленном эквиваленте где-то около 65. соответственно 65 < 10 
+                // это ложь, и цикл не крутится совсем
             {
                 Console.Write($" {i++} ");
             }
             Console.WriteLine();
 
-            const string K = "  ";
+            // [sb] сюда добавил ещё один пробел, иначе не соответствовало коду выше
+            // Если хочется оставить 2 пробела, тогда надо один пробел убрать выше, в строке 36
+            const string K = "   ";
 
             //Формирование всего шахматного поля
             for (int h = Size; h >= 1; h--)
@@ -60,11 +64,12 @@ namespace Lesson1
                         Console.BackgroundColor = ConsoleColor.Green;
                         Console.Write(K);
                     }
-                    //Восстановление исходного цвета консоли
-                    Console.BackgroundColor = saveColor;
-                    Console.Write($" {h} ");
-                    Console.WriteLine();
                 }
+                // [sb] вот этот кусок должен быть за пределами цикла. 
+                // иначе получается, что номер выводится после каждой клетки
+                //Восстановление исходного цвета консоли
+                Console.BackgroundColor = saveColor;
+                Console.Write($" {h} ");
                 Console.WriteLine();
             }
         }
